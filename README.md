@@ -146,14 +146,14 @@ List any external sources of data that will be used in your app.
 
 ### Sitemap
 
-Home
-├── Vendors
-│ ├── Vendor Listings
-│ └── Vendor Details
-├── Vendor Registration
-├── Wishlist\*
-├── About Us
-└── Contact Us
+        Home
+        ├── Vendors
+        │ ├── Vendor Listings
+        │ └── Vendor Details
+        ├── Vendor Registration
+        ├── Wishlist\*
+        ├── About Us
+        └── Contact Us
 
 Page Descriptions-
 
@@ -347,20 +347,22 @@ By implementing above mentioned features, Farm Folks Market creates a streamline
 2. Real-Time Countdown to Events
 3. Wishlist/Bookmarking favourite vendors customer is intrested in.
 
+---
+
+## Fonts and Color Palette
+
 FONT FAMILY:
-Biski
-Comica
-Arial
+Biski, Comica, Arial
 
 Color Palette -
 TEXT COLORS:
-#38612A (Deep Green)
-#F0EFD5 (Soft Cream)
-#DF7D71 (Muted Coral/Red)
+#38612A (Deep Green),
+#F0EFD5 (Soft Cream),
+#DF7D71 (Muted Coral/Red),
 BG COLORS:
-#D6E9CE (Soft Pastel Green)
-#F0EFD5 (Soft Cream)
-#FFFBF7 (Warm Off-White)
-CTA/others:
-#DFC04E (Golden Yellow)
+#D6E9CE (Soft Pastel Green),
+#F0EFD5 (Soft Cream),
+#FFFBF7 (Warm Off-White),
+CTA/others
+#DFC04E (Golden Yellow),
 #C5A843 (Muted Golden Yellow)
