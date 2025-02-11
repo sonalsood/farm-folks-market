@@ -66,7 +66,7 @@ Farm Folks Market is designed for two primary user groups: vendors and customers
 
 ### Features
 
-Farm Folks Market includes the following key features to address the needs of vendors and customers. The platform is designed to be simple, accessible, and mobile-friendly, with no authentication or user profiles required at this stage.
+Farm Folks Market includes the following key features to address the needs of vendors and customers. The platform is designed to be simple and accessible with no authentication or user profiles required at this stage.
 
 1. Vendor Registration
    Vendors can register for the market through a simple online form.
@@ -100,7 +100,7 @@ Farm Folks Market includes the following key features to address the needs of ve
 Farm Folks Market will leverage a modern and efficient tech stack to ensure a seamless development process and a high-quality user experience. Below is a breakdown of the technologies that will be used, along with their purpose and any potential limitations.
 
 1. Frontend
-   React.js: A popular JavaScript library for building dynamic and responsive user interfaces. React’s component-based architecture will allow for reusable and maintainable code.
+   React.js: A popular JavaScript library for building dynamic user interfaces. React’s component-based architecture will allow for reusable and maintainable code.
 
    React Router DOM: A library for handling client-side routing in React applications. It will enable smooth navigation between different pages, such as the vendor directory, vendor profiles, and wishlist.
 
@@ -181,16 +181,17 @@ https://www.figma.com/design/HvzLqOzPJ4OQ6EgDfAXxke/FARM-FOLKS?node-id=0-1&p=f&t
 
 Database Schema (for Reference)
 
-~ Vendors Table
--> Column Type Description:
-id INT (PK) Unique ID for the vendor.
-name VARCHAR Name of the vendor's business.
-category VARCHAR Category of the vendor.
-description TEXT Description of the vendor's business.
-contactInfo VARCHAR Contact details (email, phone).
-website VARCHAR website/social-media details.
-imageUrl VARCHAR URL of the vendor's logo or images.
-updates TEXT Updates or promotions (optional).
+1. Vendors Table
+
+   Column Type Description:
+   id INT (PK) Unique ID for the vendor.
+   name VARCHAR Name of the vendor's business.
+   category VARCHAR Category of the vendor.
+   description TEXT Description of the vendor's business.
+   contactInfo VARCHAR Contact details (email, phone).
+   website VARCHAR website/social-media details.
+   imageUrl VARCHAR URL of the vendor's logo or images.
+   updates TEXT Updates or promotions (optional).
 
 ### Endpoints
 
