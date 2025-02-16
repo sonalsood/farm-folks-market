@@ -269,7 +269,7 @@ status (string): Indicates the result of the operation (e.g., "success", "error"
 message (string): A message explaining the result of the deletion (e.g., "Vendor successfully deleted", "Vendor not found").
 
 2. Utility Endpoints
-   GET /api/categories
+   GET /api/vendors/categories
 
 Description: Fetch a list of all available vendor categories (e.g., "produce", "baked goods", "handmade crafts").
 
