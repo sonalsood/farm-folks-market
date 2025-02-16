@@ -188,10 +188,13 @@ Database Schema (for Reference)
    name VARCHAR Name of the vendor's business.
    category VARCHAR Category of the vendor.
    description TEXT Description of the vendor's business.
-   contactInfo VARCHAR Contact details (email, phone).
+   contactEmail VARCHAR Contact details (email).
+   contactPhone VARCHAR Contact details (phone).
    website VARCHAR website/social-media details.
    imageUrl VARCHAR URL of the vendor's logo or images.
    updates TEXT Updates or promotions (optional).
+   location VARCHAR(255) Market location or area (optional)
+   availability VARCHAR(255) Days of the week or schedule vendor is available
 
 ### Endpoints
 
