@@ -1,1 +1,24 @@
 @use "./variables" as *;
+
+@mixin bodyTextBold {
+  line-height: 1.625rem; //26px
+  font-size: 1.25rem; //24px
+  font-weight: 500;
+}
+
+@mixin bodyText {
+  line-height: 1.625rem; //26px
+  font-size: 1.25rem; //24px
+}
+
+@mixin bodyCopyText {
+  line-height: 0.9375rem; //15px
+  font-size: 0.75rem; //12px
+  font-weight: 500;
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}

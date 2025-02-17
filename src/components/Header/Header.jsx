@@ -1,10 +1,13 @@
+import NavBar from "../NavBar/NavBar";
+import Logo from "../Logo/Logo";
 import "./Header.scss";
 
 const Header = () => {
   return (
-    <>
-      <h2>Header Component</h2>
-    </>
+    <header>
+      <Logo />
+      <NavBar />
+    </header>
   );
 };
 

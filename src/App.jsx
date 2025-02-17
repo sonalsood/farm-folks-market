@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import ExplorePage from "./pages/ExploreVendorsPage/ExploreVendorsPage";
 import VendorDetailPage from "./pages/VendorDetailPage/VendorDetailPage";
+import VendorRegisterPage from "./pages/VendorRegisterPage/VendorRegisterPage";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
 import "./App.scss";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/vendors" element={<ExplorePage />} />
             <Route path="/vendors/:id" element={<VendorDetailPage />} />
+            <Route path="/register" element={<VendorRegisterPage />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/contact" element={<ContactUsPage />} />
           </Routes>

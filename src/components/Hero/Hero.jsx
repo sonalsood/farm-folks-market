@@ -2,9 +2,9 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <>
-      <h2>Hero Component</h2>
-    </>
+    <section className="hero">
+      <h2>home</h2>
+    </section>
   );
 };
 

@@ -1,2 +1,25 @@
 @use "../../styles/partials/global";
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.nav {
+  border: 1px solid #0000;
+  border-radius: 1.25rem;
+  background-color: $soft-cream;
+  padding: 0.5rem 1rem;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  &__item {
+    @include bodyCopyText;
+    color: $deep-green;
+    cursor: pointer;
+  }
+}
+
+.active {
+  border-bottom: 1px solid $deep-green;
+}

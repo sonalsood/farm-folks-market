@@ -15,3 +15,45 @@ body {
   background-color: $soft-pastel-green;
   color: $deep-green;
 }
+
+header {
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  justify-items: baseline;
+  background-color: $deep-green;
+  color: $soft-cream;
+}
+
+// main {
+//   width: calc(100vw - 4rem);
+//   margin: 0 2rem;
+//   @include desktop {
+//     width: 63.75rem;
+//     margin: 0 calc((100vw - 63.75rem) / 2);
+//   }
+// }
+
+.footer {
+  &__text {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

@@ -2,9 +2,9 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <>
-      <h2>Footer Component</h2>
-    </>
+    <footer className="footer">
+      <p className="footer__text">© Farm Folks Market 2025</p>
+    </footer>
   );
 };
 
