@@ -356,7 +356,7 @@ By implementing above mentioned features, Farm Folks Market creates a streamline
 ## Fonts and Color Palette
 
 FONT FAMILY:
-Biski, Comica, Arial
+IBM Plex Serif, Newsreader, sans-serif, Arial
 
 Color Palette -
 TEXT COLORS:

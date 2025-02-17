@@ -1,5 +1,6 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography";
 
 *,
 *::before,
@@ -9,8 +10,8 @@
   margin: 0;
 }
 
-// body {
-//   font-family: "Newsreader", "Outfit", sans-serif;
-//   background-color: $pistachio;
-//   color: $black;
-// }
+body {
+  font-family: "IBM Plex Serif", "Newsreader", sans-serif, Arial;
+  background-color: $soft-pastel-green;
+  color: $deep-green;
+}
