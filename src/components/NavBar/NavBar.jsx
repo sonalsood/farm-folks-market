@@ -7,6 +7,11 @@ const NavBar = () => {
     <nav className="nav">
       <ul className="nav__list">
         <li
+          className={`nav__item ${location.pathname === "/" ? "active" : ""}`}
+        >
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li
           className={`nav__item ${
             location.pathname === "/vendors" ? "active" : ""
           }`}
