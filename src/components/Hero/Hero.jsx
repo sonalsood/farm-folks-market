@@ -28,10 +28,10 @@ const Hero = () => {
       </div>
       <div className="hero__button-container">
         <Link to="/vendors">
-          <button className="hero__button">Explore</button>
+          <button className="hero__button">Explore Vendors</button>
         </Link>
         <Link to="/register">
-          <button className="hero__button">Join Us</button>
+          <button className="hero__button">Join Our Vendor List</button>
         </Link>
       </div>
       <p className="hero__text">🧺 Shop Small, 🥖Eat Fresh, 💛Love Local!</p>

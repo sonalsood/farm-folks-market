@@ -1,0 +1,18 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.purpose {
+  padding-bottom: 3rem;
+  @include margin;
+
+  &__heading {
+    font-style: italic;
+    padding: 3rem 0 1.5rem 0;
+    @include heading;
+  }
+
+  &__text {
+    @include bodyText;
+  }
+}

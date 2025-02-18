@@ -18,14 +18,7 @@
     text-align: center;
     color: $soft-cream;
     background-color: $deep-green;
-    border: 0.5rem solid $golden-yellow;
     border-radius: 2rem;
-  }
-
-  &__text:not(:last-child)::after {
-    content: ":";
-    margin-left: 0.25rem;
-    color: $muted-coral;
-    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 }

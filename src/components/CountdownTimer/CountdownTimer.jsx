@@ -26,9 +26,9 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div className="countdown">
-      <h2 className="countdown__text">{timeLeft.days}d</h2>
-      <h2 className="countdown__text">{timeLeft.hours}h</h2>
-      <h2 className="countdown__text">{timeLeft.minutes}m</h2>
+      <h2 className="countdown__text">{timeLeft.days}d :</h2>
+      <h2 className="countdown__text">{timeLeft.hours}h :</h2>
+      <h2 className="countdown__text">{timeLeft.minutes}m :</h2>
       <h2 className="countdown__text">{timeLeft.seconds}s</h2>
     </div>
   );

@@ -26,15 +26,6 @@ header {
   color: $soft-cream;
 }
 
-// main {
-//   width: calc(100vw - 4rem);
-//   margin: 0 2rem;
-//   @include desktop {
-//     width: 63.75rem;
-//     margin: 0 calc((100vw - 63.75rem) / 2);
-//   }
-// }
-
 .footer {
   &__text {
     @include bodyCopyText;

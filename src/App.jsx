@@ -14,13 +14,29 @@ import "./App.scss";
 const baseUrl = import.meta.env.VITE_API_URL;
 
 function App() {
+  const [vendors, setVendors] = useState([]);
+
+  const fetchVendors = async () => {
+    try {
+      const vendorsRes = await axios.get(baseUrl + `/api/vendors`);
+      setVendors(vendorsRes.data);
+    } catch (error) {
+      console.error("ERROR: " + error);
+    }
+  };
+
   return (
     <>
       <BrowserRouter>
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/"
+              element={
+                <HomePage vendors={vendors} fetchVendors={fetchVendors} />
+              }
+            />
             <Route path="/vendors" element={<ExplorePage />} />
             <Route path="/vendors/:id" element={<VendorDetailPage />} />
             <Route path="/register" element={<VendorRegisterPage />} />

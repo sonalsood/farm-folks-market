@@ -1,0 +1,42 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.testimonials {
+  @include margin;
+
+  &__heading {
+    padding-bottom: 1.5rem;
+    @include heading;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sub-container {
+    padding: 1.5rem;
+    background-color: $soft-cream;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  &__text {
+    @include bodyTextBold;
+    font-style: italic;
+    padding-bottom: 0.25rem;
+  }
+
+  &__sub-text {
+    @include bodyCopyText;
+    padding-bottom: 1rem;
+  }
+
+  &__content {
+    @include bodyText;
+  }
+}
