@@ -1,0 +1,48 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.category {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0 1.5rem 0;
+  @include margin;
+
+  &__heading {
+    @include heading;
+  }
+
+  &__filter-container {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding-right: 2rem;
+  }
+
+  &__label {
+    padding-top: 0.25rem;
+    @include bodyCopyText;
+  }
+
+  &__select {
+    font-family: "IBM Plex Serif", "Newsreader", sans-serif, Arial;
+    cursor: pointer;
+    background-color: $soft-cream;
+    color: $deep-green;
+    border: 1px solid $deep-green;
+    border-radius: 1.25rem;
+    outline: none;
+    padding: 0.25rem 0.5rem;
+    @include bodyCopyText;
+  }
+
+  &__option {
+    &:hover {
+      cursor: pointer;
+      color: $soft-cream;
+      background-color: $deep-green;
+    }
+  }
+}
