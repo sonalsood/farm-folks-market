@@ -21,8 +21,8 @@ const AllVendors = ({ vendors, fetchVendors }) => {
                 alt={vendor.name}
               />
             </Link>
-            <span className="vendor__name">{vendor.name}</span>
           </div>
+          <p>{vendor.name}</p>
           <p>{vendor.category}</p>
           <p>{vendor.description}</p>
         </div>

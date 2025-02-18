@@ -17,6 +17,10 @@
     @include bodyCopyText;
     color: $deep-green;
     cursor: pointer;
+
+    &:hover {
+      font-weight: 700;
+    }
   }
 }
 
