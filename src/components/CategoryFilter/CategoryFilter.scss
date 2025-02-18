@@ -37,12 +37,4 @@
     padding: 0.25rem 0.5rem;
     @include bodyCopyText;
   }
-
-  &__option {
-    &:hover {
-      cursor: pointer;
-      color: $soft-cream;
-      background-color: $deep-green;
-    }
-  }
 }

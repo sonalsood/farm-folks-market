@@ -37,11 +37,7 @@ const CategoryFilter = ({ selectedCategory, setSelectedCategory }) => {
           onChange={(e) => setSelectedCategory(e.target.value)}
         >
           {categories.map((category) => (
-            <option
-              key={category}
-              value={category}
-              className="category__option"
-            >
+            <option key={category} value={category}>
               {category}
             </option>
           ))}

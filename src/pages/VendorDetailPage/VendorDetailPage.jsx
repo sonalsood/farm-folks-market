@@ -1,7 +1,9 @@
+import VendorDetails from "../../components/VendorDetails/VendorDetails";
+
 const VendorDetailPage = () => {
   return (
     <>
-      <h2>VendorDetailPage</h2>
+      <VendorDetails />
     </>
   );
 };
