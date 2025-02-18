@@ -1,7 +1,9 @@
-const ExploreVendorsPage = () => {
+import AllVendors from "../../components/AllVendors/AllVendors";
+
+const ExploreVendorsPage = ({ vendors, fetchVendors }) => {
   return (
     <>
-      <h2>ExploreVendorsPage</h2>
+      <AllVendors vendors={vendors} fetchVendors={fetchVendors} />
     </>
   );
 };
