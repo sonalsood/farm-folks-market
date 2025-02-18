@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import wishlist from "../../assets/icons/Like_Outline.svg";
+import link from "../../assets/icons/Link.svg";
 import "./AllVendors.scss";
 
 const AllVendors = ({ vendors, fetchVendors }) => {
@@ -22,9 +24,24 @@ const AllVendors = ({ vendors, fetchVendors }) => {
               />
             </Link>
           </div>
-          <p>{vendor.name}</p>
-          <p>{vendor.category}</p>
-          <p>{vendor.description}</p>
+          <h3 className="vendor__name">{vendor.name}</h3>
+          <p className="vendor__description">{vendor.description}</p>
+          <span className="vendor__category">Category: {vendor.category}</span>
+          <div className="vendor__links-container">
+            <Link to={`/vendors/${vendor.id}`}>
+              <button className="vendor__button">View Details</button>
+            </Link>
+            <div className="vendor__icon-container">
+              <Link to={vendor.website}>
+                <img className="vendor__icon" src={link} alt="link-icon" />
+              </Link>
+              <img
+                className="vendor__icon"
+                src={wishlist}
+                alt="wishlist-icon"
+              />
+            </div>
+          </div>
         </div>
       ))}
     </section>

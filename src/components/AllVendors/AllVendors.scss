@@ -40,8 +40,54 @@
     height: 100%;
     object-fit: cover;
   }
-}
 
-p {
-  color: $deep-green;
+  &__name {
+    text-align: center;
+    padding: 1rem 0;
+    @include bodyTextBold;
+  }
+
+  &__description {
+    padding: 0 1rem 0.5rem 1rem;
+    @include bodyCopyText;
+  }
+
+  &__category {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    color: $muted-coral;
+    @include bodyCopyText;
+  }
+
+  &__links-container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: $golden-yellow;
+    color: $deep-green;
+    @include bodyCopyText;
+
+    &:hover {
+      background-color: $muted-golden-yellow;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
 }
