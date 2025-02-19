@@ -1,7 +1,9 @@
+import JoinUsHeading from "../../components/JoinUsHeading/JoinUsHeading";
+
 const VendorRegisterPage = () => {
   return (
     <>
-      <h2>VendorRegisterPage</h2>
+      <JoinUsHeading />
     </>
   );
 };

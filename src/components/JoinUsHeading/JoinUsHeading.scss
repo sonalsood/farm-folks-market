@@ -1,0 +1,23 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.join-us {
+  padding: 3rem 0;
+  @include margin;
+
+  &__heading {
+    @include heading;
+    padding-bottom: 1.5rem;
+  }
+
+  &__sub-text {
+    font-style: italic;
+    @include bodyText;
+  }
+
+  &__text {
+    width: 85%;
+    @include bodyText;
+  }
+}
