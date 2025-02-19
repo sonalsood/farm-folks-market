@@ -8,6 +8,9 @@ import pin from "../../assets/icons/Pin.svg";
 import calendar from "../../assets/icons/Calendar.svg";
 import update from "../../assets/icons/Update.svg";
 import website from "../../assets/icons/Website.svg";
+import instagram from "../../assets/icons/Instagram.svg";
+import facebook from "../../assets/icons/Facebook.svg";
+import wishlist from "../../assets/icons/Like_Outline.svg";
 import "./VendorDetails.scss";
 
 const baseUrl = import.meta.env.VITE_API_URL;
@@ -44,67 +47,104 @@ const VendorDetails = () => {
         </div>
         <div className="content">
           <div className="content__left-container">
-            <img
-              className="content__img"
-              src={vendor.imageUrl}
-              alt="vendor-image"
-            />
+            <div className="content__img-container">
+              <img
+                className="content__img"
+                src={vendor.imageUrl}
+                alt="vendor-image"
+              />
+              <img
+                className="wishlist-icon"
+                src={wishlist}
+                alt="wishlist-heart-icon"
+              />
+            </div>
+            <h2 className="content__name">{vendor.name.toUpperCase()}</h2>
             <p className="content__description">{vendor.description}</p>
             <div className="content__update-container">
               <img className="content__icon" src={update} alt="updates-icon" />
-              <p className="content__update">{vendor.updates}</p>
+              <div className="content__update">
+                <p className="content__update-text">{vendor.updates}</p>
+              </div>
             </div>
           </div>
           <div className="content__right-container">
-            <div className="content__contact-info">
-              <h2>Contact Information</h2>
-              <p>
-                <img className="content__icon" src={envelop} alt="email-icon" />{" "}
-                {vendor.contactEmail}
-              </p>
-              <p>
+            <div className="content__info">
+              <h3 className="content__sub-heading">Contact Information</h3>
+              <div className="content__icon-text-container">
+                <img className="content__icon" src={envelop} alt="email-icon" />
+                <p className="content__text">
+                  <a href={`mailto:${vendor.contactEmail}`}>
+                    {vendor.contactEmail}
+                  </a>
+                </p>
+              </div>
+              <div className="content__icon-text-container">
                 <img className="content__icon" src={phone} alt="phone-icon" />{" "}
-                {vendor.contactPhone}
-              </p>
-              <a
-                href={vendor.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="website-button"
-              >
-                <img
-                  className="content__icon"
-                  src={website}
-                  alt="website-icon"
-                />
-                Visit Website
-              </a>
+                <p className="content__text">{vendor.contactPhone}</p>
+              </div>
+              <div className="links-container">
+                <a
+                  href={vendor.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="content__website-button">
+                    <img
+                      className="content__icon"
+                      src={website}
+                      alt="website-icon"
+                    />
+                    Visit Website
+                  </button>
+                </a>
+                <div className="social-container">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="content__icon"
+                      src={instagram}
+                      alt="instagram-icon"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="content__icon"
+                      src={facebook}
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div className="location-info">
-              <h2>Location</h2>
-              <p>
+            <div className="content__info">
+              <h3 className="content__sub-heading">Location</h3>
+              <div className="content__icon-text-container">
                 <img className="content__icon" src={pin} alt="location-icon" />
-                {vendor.location}
-              </p>
+                <p className="content__text">{vendor.location}</p>
+              </div>
             </div>
 
-            <div className="availability-info">
-              <h2>Availability</h2>
-              <p>
+            <div className="content__info">
+              <h3 className="content__sub-heading">Availability</h3>
+              <div className="content__icon-text-container">
                 <img
                   className="content__icon"
                   src={calendar}
                   alt="calendar-icon"
-                />{" "}
-                {vendor.availability}
-              </p>
+                />
+                <p className="content__text">{vendor.availability}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="social">
-          <p>social insta fb x</p>
-          {/* add social media icon and links */}
         </div>
       </div>
     </section>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import wishlist from "../../assets/icons/Like_Outline.svg";
 import link from "../../assets/icons/Link.svg";
-import CategoryFilter from "../CategoryFilter/CategoryFilter";
 import "./AllVendors.scss";
 
 const AllVendors = ({ vendors }) => {
@@ -33,9 +32,13 @@ const AllVendors = ({ vendors }) => {
                 <button className="vendor__button">View Details</button>
               </Link>
               <div className="vendor__icon-container">
-                <Link to={vendor.website}>
+                <a
+                  href={vendor.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className="vendor__icon" src={link} alt="link-icon" />
-                </Link>
+                </a>
                 <img
                   className="vendor__icon"
                   src={wishlist}

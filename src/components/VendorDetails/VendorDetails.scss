@@ -49,6 +49,7 @@
 }
 
 .content {
+  padding: 3rem 2.8125rem;
   display: flex;
 
   &__left-container {
@@ -60,22 +61,161 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding-left: 2.8125rem;
+    border-left: 2px solid $deep-green;
+    gap: 3rem;
+  }
+
+  &__img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid $deep-green;
+    border-radius: 2rem;
+    width: 25rem;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
   &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0 0.5rem;
+    text-align: center;
+    @include heading;
   }
 
   &__description {
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include bodyText;
   }
 
   &__update-container {
     display: flex;
-    gap: 0.5rem;
-  }
-
-  &__icon {
+    gap: 1rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
   }
 
   &__update {
+    background-color: $muted-coral;
+    color: $soft-cream;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    animation: bounceLoop 1.5s infinite ease-in-out;
+    @include bodyCopyText;
+    font-weight: 800;
+  }
+
+  &__update-text {
+    background: linear-gradient(
+      90deg,
+      $warm-off-white,
+      $muted-golden-yellow,
+      $warm-off-white
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerText 2.5s infinite linear;
+  }
+
+  @keyframes bounceLoop {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes shimmerText {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  &__sub-heading {
+    padding-bottom: 0.25rem;
+    @include bodyTextBold;
+  }
+
+  &__icon-text-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-items: baseline;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__text {
+    @include bodyText;
+  }
+
+  &__website-button {
+    color: $deep-green;
+    background-color: $golden-yellow;
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    @include bodyCopyText;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $muted-golden-yellow;
+    }
+  }
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.social-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.9375rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
