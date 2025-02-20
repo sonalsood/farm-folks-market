@@ -86,9 +86,9 @@ Farm Folks Market includes the following key features to address the needs of ve
 
    Vendors can be filtered by category (e.g., organic produce, baked goods, handmade crafts).
 
-   Results can be sorted by popularity, distance, or alphabetical order.
+   \*Results can be sorted by popularity, distance, or alphabetical order.
 
-4. Vendor Updates and Promotions - TO BE REVISED
+4. Vendor Updates and Promotions -
    Vendors can post updates, promotions, and new product information directly on their profile.
 
    Customers can view these updates when browsing the vendor directory or visiting a vendor’s profile.

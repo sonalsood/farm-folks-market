@@ -1,4 +1,3 @@
-import logo from "../../assets/images/Website_Logo.png";
 import "./AboutUsPage.scss";
 
 const AboutUsPage = () => {

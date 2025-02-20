@@ -1,0 +1,75 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  @include margin;
+  &__hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  &__heading {
+    @include heading;
+  }
+
+  &__hero-text {
+    width: 60%;
+    @include bodyCopyText;
+  }
+
+  &__logo {
+    width: 18.75rem;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__details {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  &__details-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    background-color: $soft-cream;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    width: 40%;
+  }
+
+  &__text {
+    padding-bottom: 1rem;
+    color: $muted-coral;
+    @include bodyCopyText;
+  }
+
+  &__icon-text-container {
+    display: flex;
+    justify-items: baseline;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+  }
+
+  &__value {
+    @include bodyCopyText;
+  }
+
+  &__icon {
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+}
