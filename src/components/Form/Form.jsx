@@ -153,7 +153,7 @@ const Form = () => {
           className="form__input"
         />
         <label htmlFor="updates" className="form__label">
-          Update
+          Update/Promotions
         </label>
         <textarea
           name="updates"
