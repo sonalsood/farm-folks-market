@@ -2,5 +2,59 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-// .form {
-// }
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  background-color: $soft-cream;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+  width: 60%;
+  margin: 0 auto;
+
+  &__heading {
+    @include heading;
+    text-align: center;
+  }
+
+  &__label {
+    padding: 1rem 0 0.25rem 0;
+    @include bodyCopyText;
+  }
+
+  &__input {
+    font-family: "IBM Plex Serif", "Newsreader", sans-serif, Arial;
+    background-color: $warm-off-white;
+    outline: none;
+    border: 1px solid $deep-green;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    @include bodyCopyText;
+  }
+
+  &__upload {
+  }
+
+  &__button {
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: $golden-yellow;
+    color: $deep-green;
+    @include bodyCopyText;
+    font-weight: 600;
+    width: auto;
+    align-self: flex-end;
+    margin-top: 1rem;
+
+    &:hover {
+      background-color: $muted-golden-yellow;
+    }
+  }
+}
+
+.form-section {
+  padding-bottom: 3rem;
+  @include margin;
+}

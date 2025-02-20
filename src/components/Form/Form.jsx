@@ -73,77 +73,136 @@ const Form = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className="form">
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="category"
-        placeholder="Category"
-        value={formData.category}
-        onChange={handleChange}
-        required
-      />
-      <textarea
-        name="description"
-        placeholder="Description"
-        value={formData.description}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="email"
-        name="contactEmail"
-        placeholder="Email"
-        value={formData.contactEmail}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="contactPhone"
-        placeholder="Phone"
-        value={formData.contactPhone}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="website"
-        placeholder="Website"
-        value={formData.website}
-        onChange={handleChange}
-      />
-      <textarea
-        name="updates"
-        placeholder="Updates"
-        value={formData.updates}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="location"
-        placeholder="Location"
-        value={formData.location}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="availability"
-        placeholder="Availability"
-        value={formData.availability}
-        onChange={handleChange}
-      />
-      <input type="file" name="imageUrl" onChange={handleFileChange} />
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      <button type="submit">Add Vendor</button>
-    </form>
+    <section className="form-section">
+      <form onSubmit={handleSubmit} className="form">
+        <h2 className="form__heading">Join our Vendor List</h2>
+        <label htmlFor="name" className="form__label">
+          Name
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="E.g., Greenfield Organic Farm"
+          value={formData.name || ""}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+        <label htmlFor="category" className="form__label">
+          Category
+        </label>
+        <input
+          type="text"
+          name="category"
+          id="category"
+          placeholder="E.g., Organic Produce"
+          value={formData.category || ""}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+        <label htmlFor="description" className="form__label">
+          Description
+        </label>
+        <textarea
+          name="description"
+          id="description"
+          placeholder="Briefly describe your business and products"
+          value={formData.description || ""}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+        <label htmlFor="contactEmail" className="form__label">
+          Email
+        </label>
+        <input
+          type="email"
+          name="contactEmail"
+          id="contactEmail"
+          placeholder="E.g., farmfresh@example.com"
+          value={formData.contactEmail || ""}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+        <label htmlFor="contactPhone" className="form__label">
+          Phone
+        </label>
+        <input
+          type="text"
+          name="contactPhone"
+          id="contactPhone"
+          placeholder="E.g., +1 555-123-4567"
+          value={formData.contactPhone || ""}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+        <label htmlFor="website" className="form__label">
+          Website
+        </label>
+        <input
+          type="text"
+          name="website"
+          id="website"
+          placeholder="E.g., www.farmfresh.com or social media link"
+          value={formData.website || ""}
+          onChange={handleChange}
+          className="form__input"
+        />
+        <label htmlFor="updates" className="form__label">
+          Update
+        </label>
+        <textarea
+          name="updates"
+          id="updates"
+          placeholder="E.g., 'Fresh strawberries available this weekend!'"
+          value={formData.updates || ""}
+          onChange={handleChange}
+          className="form__input"
+        />
+        <label htmlFor="location" className="form__label">
+          Location
+        </label>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="E.g., Downtown Farmers' Market, Stall #12"
+          value={formData.location || ""}
+          onChange={handleChange}
+          className="form__input"
+        />
+        <label htmlFor="availability" className="form__label">
+          Availability
+        </label>
+        <input
+          type="text"
+          name="availability"
+          id="availability"
+          placeholder="E.g., Saturdays & Sundays, 9 AM - 2 PM"
+          value={formData.availability || ""}
+          onChange={handleChange}
+          className="form__input"
+        />
+        <label htmlFor="imageUrl" className="form__label">
+          Image
+        </label>
+        <input
+          type="file"
+          name="imageUrl"
+          id="imageUrl"
+          onChange={handleFileChange}
+          className="form__upload"
+        />
+        {error && <p style={{ color: "red" }}>{error}</p>}
+        <button type="submit" className="form__button">
+          Add Vendor
+        </button>
+      </form>
+    </section>
   );
 };
 
