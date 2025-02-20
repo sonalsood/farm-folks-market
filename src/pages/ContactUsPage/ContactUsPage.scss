@@ -25,7 +25,7 @@
 
   &__hero-text {
     width: 60%;
-    @include bodyCopyText;
+    @include bodyText;
   }
 
   &__logo {
