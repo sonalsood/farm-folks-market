@@ -20,6 +20,7 @@
   &__label {
     padding: 1rem 0 0.25rem 0;
     @include bodyCopyText;
+    font-weight: 600;
   }
 
   &__input {
@@ -33,6 +34,9 @@
   }
 
   &__upload {
+    font-family: "IBM Plex Serif", "Newsreader", sans-serif, Arial;
+    color: $muted-coral;
+    @include bodyCopyText;
   }
 
   &__button {
