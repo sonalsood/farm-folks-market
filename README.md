@@ -157,21 +157,21 @@ List any external sources of data that will be used in your app.
 
 Page Descriptions-
 
-Home- The main landing page of the platform, featuring an overview of the marketplace, featured vendors, and quick access to key sections (e.g., Vendors, Vendor Registration).
+1. Home- The main landing page of the platform, featuring an overview of the marketplace, featured vendors, and quick access to key sections (e.g., Vendors, Vendor Registration).
 
-1. Vendors
+2. Vendors
 
    1.1 Vendor Listings: Displays a filterable list of all vendors. Customers can filter by category (e.g., organic produce, baked goods, handmade crafts)
 
    1.2 Vendor Details: A dedicated page for each vendor, showcasing their business information, products, photos, updates, and promotions.
 
-2. Vendor Registration- A simple online form where new vendors can register and provide basic information (e.g., business name, category, description, contact details, and photos). No authentication or account creation is required.
+3. Vendor Registration- A simple online form where new vendors can register and provide basic information (e.g., business name, category, description, contact details, and photos). No authentication or account creation is required.
 
-3. \*Wishlist: A personalized page where customers can save and manage their favorite vendors using local storage. Vendors can be added or removed from the wishlist. This is a nice to have feature for later and may/may not be included in the initial working prototype.
+4. \*Wishlist: A personalized page where customers can save and manage their favorite vendors using local storage. Vendors can be added or removed from the wishlist. This is a nice to have feature for later and may/may not be included in the initial working prototype.
 
-4. About Us- Provides information about Farm Folks Market, its mission to support local economies, and how it connects vendors and customers.
+5. About Us- Provides information about Farm Folks Market, its mission to support local economies, and how it connects vendors and customers.
 
-5. Contact Us- A page for users to get in touch with the platform for support, feedback, or inquiries.
+6. Contact Us- A page for users to get in touch with the platform for support, feedback, or inquiries.
 
 ### Mockups
 
