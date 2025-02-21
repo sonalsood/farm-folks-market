@@ -199,7 +199,7 @@ const Form = () => {
         />
         {error && <p style={{ color: "red" }}>{error}</p>}
         <button type="submit" className="form__button">
-          Add Vendor
+          Become a Vendor
         </button>
       </form>
     </section>
