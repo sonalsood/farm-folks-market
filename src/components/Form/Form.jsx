@@ -51,7 +51,7 @@ const Form = () => {
         baseUrl + `/api/vendors`,
         formDataToSend,
         {
-          headers: { "Content-Type": "multipart/form-data" }, // Axios automatically sets this
+          headers: { "Content-Type": "multipart/form-data" },
         }
       );
 
@@ -197,7 +197,11 @@ const Form = () => {
           onChange={handleFileChange}
           className="form__upload"
         />
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && (
+          <p className="form__error-text" style={{ color: "red" }}>
+            {error}
+          </p>
+        )}
         <button type="submit" className="form__button">
           Become a Vendor
         </button>
