@@ -2,6 +2,49 @@
 
 FARM FOLKS MARKET
 
+## 📥 **Installation & Setup**
+
+### **Back-End Repository**
+
+This project works with the following back-end repository:
+[Farm Folks Market Back-End](https://github.com/sonalsood/farm-folks-market-api.git)
+
+### **Prerequisites**
+
+- Ensure **Node.js (v18+)** and **npm** are installed on your machine.
+
+Follow these steps to run the project on a new machine:
+
+### 1️⃣ **Clone the Repository (If using Git)**
+
+If you're using Git, clone the repo:  
+ git clone https://github.com/sonalsood/farm-folks-market.git
+cd farm-folks-market
+
+> **OR** If you downloaded a ZIP file, extract it and navigate to the project folder.
+
+### 2️⃣ **Create a `.env` File**
+
+Inside the project folder, create a `.env` file and add the following line:
+
+      VITE_API_URL=http://localhost:5050
+
+> Replace `http://localhost:5050` with your actual backend API URL if different. There is a sample .env.sample file with environment variable.
+
+### 3️⃣ **Install Dependencies**
+
+Run the following command to install required dependencies:
+
+      npm install
+
+### 4️⃣ **Start the Development Server**
+
+To launch the React app, run:
+
+      npm run dev
+
+This will start the app on `http://localhost:5173/` or the available port.
+
 ## Overview
 
 Farm Folks Market is a user-friendly online platform designed to connect local vendors with customers by creating a virtual marketplace for farmers' markets. The platform allows vendors to easily register and showcase their businesses, while customers can explore vendors and filter by category. With features like vendor filtering, registering, and a user-friendly design, Farm Folks Market simplifies the process of discovering and supporting local businesses. By providing a centralized hub for farmers' market activities, the platform promotes community engagement and fosters the growth of local economies.
