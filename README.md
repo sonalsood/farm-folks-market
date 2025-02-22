@@ -398,18 +398,25 @@ By implementing above mentioned features, Farm Folks Market creates a streamline
 
 ## Fonts and Color Palette
 
-FONT FAMILY:
-IBM Plex Serif, Newsreader, sans-serif, Arial
+### **Font Family**
 
-Color Palette -
+      IBM Plex Serif, Newsreader, sans-serif, Arial
+
+### **Color Palette**
+
 TEXT COLORS:
-#38612A (Deep Green),
-#F0EFD5 (Soft Cream),
-#DF7D71 (Muted Coral/Red),
+
+      #38612A (Deep Green),
+      #F0EFD5 (Soft Cream),
+      #DF7D71 (Muted Coral/Red),
+
 BG COLORS:
-#D6E9CE (Soft Pastel Green),
-#F0EFD5 (Soft Cream),
-#FFFBF7 (Warm Off-White),
-CTA/others
-#DFC04E (Golden Yellow),
-#C5A843 (Muted Golden Yellow)
+
+      #D6E9CE (Soft Pastel Green),
+      #F0EFD5 (Soft Cream),
+      #FFFBF7 (Warm Off-White),
+
+CTA/others:
+
+      #DFC04E (Golden Yellow),
+      #C5A843 (Muted Golden Yellow)
