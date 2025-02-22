@@ -1,6 +1,6 @@
-# Project Title
+# FARM FOLKS MARKET
 
-FARM FOLKS MARKET
+---
 
 ## 📥 **Installation & Setup**
 
