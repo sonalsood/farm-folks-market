@@ -1,7 +1,5 @@
 # FARM FOLKS MARKET
 
----
-
 ## 📥 **Installation & Setup**
 
 ### **Back-End Repository**
@@ -44,6 +42,8 @@ To launch the React app, run:
       npm run dev
 
 This will start the app on `http://localhost:5173/` or the available port.
+
+---
 
 ## Overview
 
